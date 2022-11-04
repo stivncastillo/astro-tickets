@@ -1,9 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import SpeakersSection from '../components/Home/SpeakersSection.astro';
-import ReservationCard from '../components/ReservationCard/ReservationCard';
-import ReservationCardVue from '../components/ReservationCard/ReservationCard.vue';
-import ReservationCardSvelte from '../components/ReservationCard/ReservationCard.svelte';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,16 +9,6 @@ import ReservationCardSvelte from '../components/ReservationCard/ReservationCard
 
     <section class="mb-32 text-center py-24 bg-indigo-900">
       <h2 class="text-3xl font-bold mb-12 text-white">Reservar Entradas</h2>
-
-      <div class="w-1/2 m-auto mb-32">
-        <ReservationCard title="DevFest con React" client:visible/>
-      </div>
-      <div class="w-1/2 m-auto mb-32">
-        <ReservationCardVue title="DevFest con Vue" client:visible/>
-      </div>
-      <div class="w-1/2 m-auto">
-        <ReservationCardSvelte title="DevFest con Svelte" client:visible/>
-      </div>
     </section>
   </main>
 </Layout>
